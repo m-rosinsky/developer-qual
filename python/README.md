@@ -10,7 +10,7 @@ All exercises and projects are graded via test scripts within this repository.
 
 - For all exercises in this tutorial, test scripts will be provided in the `/tests` subdirectory.
 - DO NOT MODIFY THE TESTS
-- To run the tests, simply run the script in the `/tests` directory using python3
+- To run the tests, simply run the `test.py` script in the `/tests` directory using python3
 
 For example, we can run the tests for the exercises in the introduction section with the following command:
 
