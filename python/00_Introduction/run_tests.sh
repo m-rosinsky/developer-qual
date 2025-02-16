@@ -11,6 +11,8 @@ while [ ! -d "$current_dir/.git" ]; do
     current_dir=$(dirname "$current_dir")
 done
 
+# Navigate to workdir.
 cd "$current_dir/python/00_Introduction"
 
-python3 -m pip install .
+# Run tests.
+python3 -m unittest tests.test

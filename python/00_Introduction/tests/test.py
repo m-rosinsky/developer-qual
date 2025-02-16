@@ -11,21 +11,25 @@ from io import StringIO
 import sys
 import unittest
 
+from exercises.exercise_a import hello_world
+
 class TestBench(unittest.TestCase):
 
-    def test_00a(self):
+    def test_exercise_a(self):
         # Capture output of print statement.
         captured_output = StringIO()
         sys.stdout = captured_output
 
         # Call function.
-        print("Hello, World")
+        hello_world()
 
         # Restore original stdout.
         sys.stdout = sys.__stdout__
 
         # Assert.
-        self.assertEqual(captured_output.getvalue().strip(), "Hello, World")
+        actual = captured_output.getvalue().strip()
+        expected = "Hello, World"
+        self.assertEqual(actual, expected)
 
 if __name__=='__main__':
     unittest.main()
