@@ -8,14 +8,15 @@ All exercises and projects are graded via test scripts within this repository.
 
 ## Running Test Scripts
 
-- For all exercises in this tutorial, test scripts will be provided in the `/tests` subdirectory.
+- For all exercises in this tutorial, test scripts will be provided in the `/tests` subdirectory
 - DO NOT MODIFY THE TESTS
-- To run the tests, simply run the `test.py` script in the `/tests` directory using python3
+- You can, however, look at the test files to see what the tests expect, if that is helpful
+- To run the tests, simply run the `run_tests.sh` script in the root directory of each section
 
-For example, we can run the tests for the exercises in the introduction section with the following command:
+For example, we can run all tests in the `00_Introduction` directory:
 
 ```
-\developer-qual\python> python3 00_Introduction\tests\test.py
+\developer-qual\python> ./00_Introduction/run_tests.sh
 ```
 
 ## Content
@@ -28,4 +29,4 @@ The content is broken down into the following sections:
         - Installing Python
         - Hello, World
     - Exercises
-        - 00a_Hello_World
+        - exercise_a.py
