@@ -13,7 +13,7 @@ The only things we should need to write Python effectively for this course are t
 
 ## Installation
 
-The tools listed above are well-documented and system-independent enough in my opinion that I will skip spelling out how to get them installed on this tutorial.
+The tools listed above are well-documented and system-independent enough in my opinion that I will skip spelling out how to get them installed in this tutorial.
 
 A Google search for each of the line items should have the sufficient information.
 
