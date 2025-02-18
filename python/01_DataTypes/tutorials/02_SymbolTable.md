@@ -54,10 +54,14 @@ print(y)
 Try it out in the REPL:
 
 ```python3
+>>> x = 5
+>>> print(x)
+5
 >>> print(y)
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'y' is not defined
+>>> 
 ```
 
 In this case, we expectedly get an error. Python sees the symbol `y` and consults the Symbol Table.
