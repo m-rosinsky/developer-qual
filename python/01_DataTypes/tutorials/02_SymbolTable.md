@@ -45,7 +45,13 @@ print(x)
 
 It sees the symbol `x`, and consults the Symbol Table to see what it's value is. In this case, it finds the entry for `x` from earlier, sees the value `5`, and prints it for us.
 
-Let's see what happens when we execute this line after it. Try it out in the REPL:
+Let's see what happens when we execute this line after it.
+
+```python3
+print(y)
+```
+
+Try it out in the REPL:
 
 ```python3
 >>> print(y)
@@ -64,4 +70,6 @@ We're going to be seeing a lot of the Symbol Table used in future tutorials, as 
 
 In this tutorial, we've become introduced to the Symbol Table, a concept we're going to see frequently as the tutorials continue.
 
-I encourage both new and experienced programmers to make a symbol table like this for yourself on some scratch paper when writing or reading code! It can be surprising useful when fixing issues in your programs.
+I encourage both new and experienced programmers to make a symbol table like this for yourself on some scratch paper when writing or reading code!
+
+Take your program line-by-line updating the symbol table as you go. It can be surprising useful when fixing issues in your programs.
