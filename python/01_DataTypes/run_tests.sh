@@ -12,7 +12,7 @@ while [ ! -d "$current_dir/.git" ]; do
 done
 
 # Navigate to workdir.
-cd "$current_dir/python/00_Introduction"
+cd "$current_dir/python/01_DataTypes"
 
 # Run tests.
 python3 -m unittest tests.test
