@@ -61,7 +61,7 @@ Now let's declare a variable in the REPL:
 
 And we can verify that `x` is indeed an integer by calling the `type` function on `x`:
 
-```
+```python3
 >>> type(x)
 <class 'int'>
 ```
@@ -70,7 +70,7 @@ We'll talk about classes in a later section, but we can see how the Python inter
 
 ## Printing Variables
 
-Declaring variables allows us to write variables to memory. We can print the value of variables by just using the `print` function that we did in the first section:
+We can print the value of variables by just using the `print` function that we did in the first section:
 
 ```python
 x = 5
