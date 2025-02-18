@@ -75,6 +75,28 @@ I will say, however, there are a few key features that make my life much easier 
     - Makes it easier to run your programs and test programs from within your code editor rather than switching tabs
     - Also helpful to run git commands in
 
+## Clone the Repo
+
+If you haven't already, to work in this repo, we'll need to clone it from Github.
+
+Here's how we can do that:
+
+1. Navigate to the git repo in a web browser
+2. Click the green 'Code' button, and copy the HTTPS link:
+
+| ![Clone](../../../imgs/00_02_clone.png) | |
+|:--:|:--:|
+| _Cloning the Repo_ | |
+
+3. Open a terminal window and navigate to the directory in which you would like to clone
+4. Run the following command:
+
+```bash
+$ git clone <paste link>
+```
+
+This will bring the repo to your local machine, where you can work on the exericses.
+
 ## Conclusion
 
 Now that we've got our environment set up, let's write our first 'Hello, World' program!
