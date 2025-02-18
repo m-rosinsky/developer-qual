@@ -77,3 +77,9 @@ In this tutorial, we've become introduced to the Symbol Table, a concept we're g
 I encourage both new and experienced programmers to make a symbol table like this for yourself on some scratch paper when writing or reading code!
 
 Take your program line-by-line updating the symbol table as you go. It can be surprising useful when fixing issues in your programs.
+
+# Exercises
+
+Complete `exercise_a.py` in the exercises directory.
+
+Validate the test cases pass by using the `run_tests.sh` script.
