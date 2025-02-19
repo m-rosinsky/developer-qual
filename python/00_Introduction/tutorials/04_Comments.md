@@ -2,8 +2,6 @@
 
 ## Comments in Code
 
-As a quick aside from talking about variables, let's talk about comments.
-
 Oftentimes, it's useful for developers to annotate code so that themselves or other devs can better understand what a snippet of code is doing.
 
 Comments do not affect the program in any way, rather they're just for developers' quality-of-life.
