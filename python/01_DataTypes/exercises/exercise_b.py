@@ -41,4 +41,4 @@ def string_operations():
     # Print (in separate statements):
     #       - word repeated 3 times
     #       - word repeated 2 times with the string " world" added at the end
-    word = "hello"
+    pass
