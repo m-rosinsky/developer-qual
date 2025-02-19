@@ -1,4 +1,4 @@
-# 01_03 Comments
+# 00_04 Comments
 
 ## Comments in Code
 
@@ -13,9 +13,8 @@ Comments do not affect the program in any way, rather they're just for developer
 We can make single-line comments with the `#` symbol. Everything that follows this character on the same line will be considered a comment:
 
 ```python3
-# Declare some variables.
-x = 5
-y = 10
+# Let console know we're underway.
+print("Program starting...")
 ```
 
 ## Multi-Line Comments
@@ -54,3 +53,7 @@ password1 = "password1"
 ```
 
 Instead of deleting the problematic test case, we can simply comment it out for now, so when the test case is resolved, it can simply be uncommented.
+
+# Exercises
+
+Try out `exercise_b.py` to get used to commenting-out code!

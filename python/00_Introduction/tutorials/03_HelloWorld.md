@@ -67,3 +67,7 @@ Just hang on to those questions for now, but don't be afraid to experiment on yo
 Now that we've written our first program, go ahead and tackle exercise_a in the exercise folder of this section.
 
 Remember, you can run the test cases with the `run_tests.sh` script in the root folder of this section.
+
+## Exercises
+
+Try out `exercise_a.py` in the `exercises` subdirectory, and run the `run_tests.sh` script to verify your code is working correctly.
