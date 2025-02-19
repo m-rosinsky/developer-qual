@@ -12,7 +12,7 @@ TIP: Ensure all code is indented inside this declare_and_print function,
 """
 def integer_math():
     # TODO: Replace 'pass' with code to satisfy the following requirements:
-    # 1. Print the result of the x and y with the 4 basic operators (+, -, *, /)
+    # 1. Print the result of x and y with the 4 basic operators (+, -, *, /)
     #       Use 1 print statement per operation.
     x = 8
     y = 4
