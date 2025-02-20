@@ -156,3 +156,9 @@ Your order total is $17.40
 ```
 
 That looks better. The `:` operator here tells the f-string to look for some formatting instructions. And `.2f` tells it that we should always print 2 decimal places of a `float`.
+
+There are plenty more things we can do to format values based on our requirements with f-strings and the `:` operator. But we'll leave those as an exercise to the reader if they wish to explore this concept more.
+
+## Exercises
+
+Check out `exercise_d.py` to get some reps in with format strings!
