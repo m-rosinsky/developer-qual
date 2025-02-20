@@ -139,5 +139,78 @@ class TestBench(unittest.TestCase):
         self.assertEqual(actual_output[0], 'hellohellohello', f"Got {actual_output[0]} for 'hello' * 3, expected 'hellohellohello'")
         self.assertEqual(actual_output[1], 'hellohello world', f"Got {actual_output[1]} for 'hello' * 2 + ' world', expected 'hellohello world'")
 
+    # New test cases for exercise_c.py
+    def test_exercise_c1(self):
+        from exercises.exercise_c import cast_to_string
+
+        # Capture output of print statement.
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        # Call function.
+        cast_to_string()
+
+        # Restore original stdout.
+        sys.stdout = sys.__stdout__
+
+        # Check output.
+        actual_output = captured_output.getvalue().strip().splitlines()
+        self.assertEqual(len(actual_output), 1, f"Required 1 print statement, received {len(actual_output)}")
+        self.assertEqual(actual_output[0], '42 is the answer', f"Got {actual_output[0]}, expected '42 is the answer'")
+
+    def test_exercise_c2(self):
+        from exercises.exercise_c import cast_to_float
+
+        # Capture output of print statement.
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        # Call function.
+        cast_to_float()
+
+        # Restore original stdout.
+        sys.stdout = sys.__stdout__
+
+        # Check output.
+        actual_output = captured_output.getvalue().strip().splitlines()
+        self.assertEqual(len(actual_output), 1, f"Required 1 print statement, received {len(actual_output)}")
+        self.assertEqual(actual_output[0], '30.0', f"Got {actual_output[0]}, expected '30.0'")
+
+    def test_exercise_c3(self):
+        from exercises.exercise_c import cast_to_int
+
+        # Capture output of print statement.
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        # Call function.
+        cast_to_int()
+
+        # Restore original stdout.
+        sys.stdout = sys.__stdout__
+
+        # Check output.
+        actual_output = captured_output.getvalue().strip().splitlines()
+        self.assertEqual(len(actual_output), 1, f"Required 1 print statement, received {len(actual_output)}")
+        self.assertEqual(actual_output[0], '19', f"Got {actual_output[0]}, expected '19'")
+
+    def test_exercise_c4(self):
+        from exercises.exercise_c import mixed_casting
+
+        # Capture output of print statement.
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        # Call function.
+        mixed_casting()
+
+        # Restore original stdout.
+        sys.stdout = sys.__stdout__
+
+        # Check output.
+        actual_output = captured_output.getvalue().strip().splitlines()
+        self.assertEqual(len(actual_output), 1, f"Required 1 print statement, received {len(actual_output)}")
+        self.assertEqual(actual_output[0], '128.5', f"Got {actual_output[0]}, expected '128.5'")
+
 if __name__=='__main__':
     unittest.main()
