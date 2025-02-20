@@ -28,21 +28,19 @@ This works, but notice how we had to:
 
 This approach gets messy fast, especially as we add more variables or longer strings.
 
-It's like trying to build a sentence with glue and scissors--functional, but not elegant.
-
 Let's explore a better way: _format strings_.
 
 ## What are Format Strings?
 
 Format strings provide a cleaner, more readable way to combine variables into a string.
 
-They let you embed expressions directly into a _template_, handling type casting automatically in most cases.
+They let us embed expressions directly into a _template_, handling type casting automatically in most cases.
 
 Python offers a few ways to do this, which we'll cover here:
 
 ## Method 1: The `.format()` Method
 
-The built-in `.format()` function lets you define placeholders in a string using curly braces `{}`, and then fill them in with values after.
+The built-in `.format()` function lets us define placeholders in a string using curly braces `{}`, and then fill them in with values after.
 
 Here's how we can rewrite our tweet example:
 
@@ -129,7 +127,7 @@ User @jack tweeted 'Just setting up my twitter!', which got 48 likes after doubl
 
 f-strings can do more than just plug in values--they can format them in specific ways as well!
 
-For instance, when let's say we're printing a monetary value:
+For instance, let's say we're printing a monetary value:
 
 ```python3
 order_total = 17.40
@@ -161,4 +159,4 @@ There are plenty more things we can do to format values based on our requirement
 
 ## Exercises
 
-Check out `exercise_d.py` to get some reps in with format strings!
+Check out `exercise_d.py` to get some reps with format strings!
