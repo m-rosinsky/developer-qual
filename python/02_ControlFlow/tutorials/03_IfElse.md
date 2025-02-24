@@ -6,7 +6,7 @@ In this tutorial, we’ll expand on that by introducing two more keywords: `elif
 
 ## The `else` Keyword
 
-When we look at the basic syntax of an `if` block:
+Let's revisit the basic syntax of an `if` block:
 
 ```python3
 if <condition>:
