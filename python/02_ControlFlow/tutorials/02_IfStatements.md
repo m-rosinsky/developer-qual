@@ -1,31 +1,31 @@
 # 02_02 If Statements
 
-After brushing up on the `bool` data type and comparison operators in the previous chapter, we're ready to dive into the most quintessential piece of control flow in Python, the `if` statement.
+After brushing up on the `bool` data type and comparison operators in the previous chapter, we’re ready to dive into the most quintessential piece of control flow in Python: the `if` statement.
 
 ## What is Control Flow?
 
-Control Flow is simply how we instruct our program to make decisions.
+Control flow is simply how we instruct our program to make decisions.
 
-Kind of like a fork in the road, where our program chooses which side of the fork to go down based on a _condition_.
+Think of it like a fork in the road: our program chooses which path to take based on a condition.
 
-There are a few different types of Control Flow, and we'll cover the most basic one in this tutorial:
+There are Several types of control flow, but in this tutorial, we’ll cover the most basic one: the `if` statement.
 
 ## The `if` Keyword
 
 In the last chapter, we introduced the keywords `True` and `False`.
 
-Here, we introduce another keyword: `if`.
+Now, we’ll introduce another keyword: `if`.
 
 Python recognizes this word as the start of an `if` statement.
 
-An `if` statement, in its most basic form, is formatted like so:
+In its simplest form, an `if` statement looks like this:
 
 ```python3
 if <condition>:
     <code>
 ```
 
-Before we pull this apart, here is an example to make it a bit more tangible:
+To make this more concrete, here’s an example:
 
 ```python3
 max_users = 100
@@ -35,58 +35,62 @@ if num_users >= max_users:
     print("User table is full!")
 ```
 
-Maybe this example makes it a bit more intuitive to understand what's going on here. But let's break it down:
+This example might make it easier to see what’s happening. 
 
-Of course, we have the `if` keyword. Nothing too crazy there.
+Let’s break it down step by step.
 
 ## The Condition
 
-Following the `if` keyword, we have our _condition_. A condition is simply something that evaluates to `True` or `False`.
+After the `if` keyword comes the condition-—a statement that evaluates to either `True` or `False`.
 
-In other words, a condition is an expression that results in a boolean!
+In other words, a condition is an expression that produces a boolean value!
 
-Therefore, we typically use our comparison operators in the condition, so we know from the last chapter that comparison operators produce a boolean value!
+That’s why we often use comparison operators (like `>=`, `<`, or `==`) in conditions.
 
-In the example, we see the condition:
+From the last chapter, we know these operators always return a boolean.
+
+In our example, the condition is:
 
 ```python3
 num_users >= max_users
 ```
 
-So we're saying, _is the number of users greater than or equal to the maximum number of users?_ Which of course evaluates to `True`, if it is, or `False` otherwise.
+This asks:
+
+_Is the number of users greater than or equal to the maximum number of users?_
+
+If so, it evaluates to `True`; otherwise, it’s `False`.
+
+Here, since 100 >= 100, the condition is `True`.
 
 ## The Code Block
 
-To signify that the condition is ended, and that we're opening up a code block, we use the `:` symbol. We'll see this symbol come up in a few other places in Python.
+To mark the end of the condition and the start of a code block, we use the `:` symbol. You’ll see this symbol pop up in other parts of Python too.
 
-This symbol means that we're going to see an indented block on the next line.
-
-We see that the `print` statement on the line following the condition is indented:
+The `:` tells Python that an indented block of code is coming next. For example:
 
 ```python3
 if num_users >= max_users:
     print("User table is full!")
 ```
 
-The indentation here is not just for show! The indentation signfies that the line is _inside_ the `if` code block!
+The indentation isn’t just for looks—-it’s critical!
 
-This means that this `print` statement will _only_ be executed when the condition in the `if` statement evaluates to `True`.
+It shows that the print statement belongs inside the if block.
 
-Otherwise, if the condition is `False`, all the indented code following it will be skipped over completely!
+This means the indented code only runs if the condition evaluates to `True`. If the condition is `False`, Python skips over the entire indented block.
 
-So in our example, our condition is `True`, since `100 >= 100` evaluates to `True`!
-
-So the code inside the `if` block is printed.
+In our example, since 100 >= 100 is `True`, the message "User table is full!" will print.
 
 ## Going Deeper
 
-Let's take a look at another example:
+Let’s try another example:
 
 ```python3
 house_price_yesterday = 250000
 house_price_today = 235000
 
-# Let the user know we're checking.
+# Let the user know we’re checking.
 print("Checking if price went down...")
 
 # Check if the price went down.
@@ -96,22 +100,26 @@ if house_price_today < house_price_yesterday:
 print("Done checking!")
 ```
 
-In this example, we check if today's house price is lower than that of yesterday, and use an f-string (see 01_05) to print out how much.
+Here, we check if today’s house price is lower than yesterday’s and use an f-string (see 01_05) to display the difference.
 
-Another interesting thing to note is that we have 2 `print` statements after the line with the `if` keyword.
+Notice there are two print statements after the `if` line:
 
-One of the `print` statements is indented, and the other one is not.
+1. The first one is indented, so it only runs if the condition (house_price_today < house_price_yesterday) is `True`.
 
-This means that _only_ the first `print` statement will be executed depending on the conditional!
+2. The second one isn’t indented, so it runs no matter what, since it’s outside the if block.
 
-The second `print` statement, in that it is _not_ indented, will be executed regardless, since it doesn't belong to the `if` block!
+In this case, 235000 < 250000 is `True`, so the output would be:
 
-The REPL is a bit tricky to play around with indentation so an actual code file may be better here, but try it out!
+```
+Checking if price went down...
+House prices fell by 15000 dollars
+Done checking!
+```
 
-What things surprise you, and what makes sense?
+The REPL can be tricky for experimenting with indentation, so you might find it easier to try this in a code file. Play around with it-—what surprises you, and what clicks?
 
 ## Conclusion
 
-In this chapter, we brought the concept of comparison operators and boolean logic to life via our first bit of control flow, the `if` statement.
+In this chapter, we brought comparison operators and boolean logic to life with our first taste of control flow: the if statement.
 
-Check out `exercise_b.py` in this section to get used to writing a few `if` statements of your own!
+Check out exercise_b.py in this section to practice writing a few if statements of your own!
