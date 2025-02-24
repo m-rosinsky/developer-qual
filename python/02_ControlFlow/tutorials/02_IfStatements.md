@@ -57,6 +57,10 @@ So we're saying, _is the number of users greater than or equal to the maximum nu
 
 ## The Code Block
 
+To signify that the condition is ended, and that we're opening up a code block, we use the `:` symbol. We'll see this symbol come up in a few other places in Python.
+
+This symbol means that we're going to see an indented block on the next line.
+
 We see that the `print` statement on the line following the condition is indented:
 
 ```python3
