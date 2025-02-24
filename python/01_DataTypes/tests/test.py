@@ -212,5 +212,78 @@ class TestBench(unittest.TestCase):
         self.assertEqual(len(actual_output), 1, f"Required 1 print statement, received {len(actual_output)}")
         self.assertEqual(actual_output[0], '128.5', f"Got {actual_output[0]}, expected '128.5'")
 
+    # New test cases for exercise_d.py
+    def test_exercise_d1(self):
+        from exercises.exercise_d import basic_format
+
+        # Capture output of print statement.
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        # Call function.
+        basic_format()
+
+        # Restore original stdout.
+        sys.stdout = sys.__stdout__
+
+        # Check output.
+        actual_output = captured_output.getvalue().strip().splitlines()
+        self.assertEqual(len(actual_output), 1, f"Required 1 print statement, received {len(actual_output)}")
+        self.assertEqual(actual_output[0], 'Alice is 30 years old', f"Got {actual_output[0]}, expected 'Alice is 30 years old'")
+
+    def test_exercise_d2(self):
+        from exercises.exercise_d import basic_fstring
+
+        # Capture output of print statement.
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        # Call function.
+        basic_fstring()
+
+        # Restore original stdout.
+        sys.stdout = sys.__stdout__
+
+        # Check output.
+        actual_output = captured_output.getvalue().strip().splitlines()
+        self.assertEqual(len(actual_output), 1, f"Required 1 print statement, received {len(actual_output)}")
+        self.assertEqual(actual_output[0], 'The laptop costs $999.99', f"Got {actual_output[0]}, expected 'The laptop costs $999.99'")
+
+    def test_exercise_d3(self):
+        from exercises.exercise_d import calculated_fstring
+
+        # Capture output of print statement.
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        # Call function.
+        calculated_fstring()
+
+        # Restore original stdout.
+        sys.stdout = sys.__stdout__
+
+        # Check output.
+        actual_output = captured_output.getvalue().strip().splitlines()
+        self.assertEqual(len(actual_output), 1, f"Required 1 print statement, received {len(actual_output)}")
+        self.assertEqual(actual_output[0], 'Total pay is $127.5', f"Got {actual_output[0]}, expected 'Total pay is $127.5'")
+
+    def test_exercise_d4(self):
+        from exercises.exercise_d import formatted_float
+
+        # Capture output of print statement.
+        captured_output = StringIO()
+        sys.stdout = captured_output
+
+        # Call function.
+        formatted_float()
+
+        # Restore original stdout.
+        sys.stdout = sys.__stdout__
+
+        # Check output.
+        actual_output = captured_output.getvalue().strip().splitlines()
+        self.assertEqual(len(actual_output), 1, f"Required 1 print statement, received {len(actual_output)}")
+        self.assertEqual(actual_output[0], 'Distance traveled: 123.46 km', f"Got {actual_output[0]}, expected 'Distance traveled: 123.46 km'")
+
 if __name__=='__main__':
     unittest.main()
