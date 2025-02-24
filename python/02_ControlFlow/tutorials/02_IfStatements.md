@@ -70,7 +70,7 @@ if num_users >= max_users:
 
 The indentation here is not just for show! The indentation signfies that the line is _inside_ the `if` code block!
 
-This means that this `print` statement will _only_ be execute when the condition in the `if` statement evaluates to `True`.
+This means that this `print` statement will _only_ be executed when the condition in the `if` statement evaluates to `True`.
 
 Otherwise, if the condition is `False`, all the indented code following it will be skipped over completely!
 
@@ -87,13 +87,13 @@ house_price_yesterday = 250000
 house_price_today = 235000
 
 # Let the user know we're checking.
-print("Checking if price went down...)
+print("Checking if price went down...")
 
 # Check if the price went down.
 if house_price_today < house_price_yesterday:
     print(f"House prices fell by {house_price_yesterday - house_price_today} dollars")
 
-print("Done checking!)
+print("Done checking!")
 ```
 
 In this example, we check if today's house price is lower than that of yesterday, and use an f-string (see 01_05) to print out how much.
@@ -106,7 +106,7 @@ This means that _only_ the first `print` statement will be executed depending on
 
 The second `print` statement, in that it is _not_ indented, will be executed regardless, since it doesn't belong to the `if` block!
 
-The REPL is a bit tricky to play around with indentation so an actual code file may be better here, but play around with it!
+The REPL is a bit tricky to play around with indentation so an actual code file may be better here, but try it out!
 
 What things surprise you, and what makes sense?
 

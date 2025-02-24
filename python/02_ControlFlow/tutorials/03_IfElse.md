@@ -1,8 +1,8 @@
 # 02_03 If Else Statements
 
-In the last tutorial we introduced the `if` keyword, along with how to use it in its most basic form.
+In the last tutorial, we introduced the `if` keyword and explored how to use it in its most basic form.
 
-In this tutorial we expand upon that by a few more keywords: `elif` and `else`.
+In this tutorial, we’ll expand on that by introducing two more keywords: `elif` and `else`.
 
 ## The `else` Keyword
 
@@ -13,9 +13,9 @@ if <condition>:
     <code>
 ```
 
-We see that the `<code>` block will only be executed when the `<condition>` boolean value evaluates to `True`.
+Here, the `<code>` block only executes when the `<condition>` evaluates to `True`.
 
-We can use the `else` keyword in conjunction with this to additional code to execute when the boolean value evaluates to `False`. Like so:
+We can use the `else` keyword to add a block of code that runs when the condition evaluates to `False`. Here’s how it looks:
 
 ```python3
 if <condition>:
@@ -24,11 +24,11 @@ else:
     <code b>
 ```
 
-A few things to note here:
+A few key points to note:
 
-1. We see the `:` used again after the `else` keyword to signify that we're opening a code block under the `else`
-2. The `else` clause does not take a condition like the `if` clause does.
-    - This is because the `else` acts as a catch-all. If the `<condition>` evaluates to `False`, it will execute `<code b>` regardless.
+1. The `:` appears again after the `else` keyword, indicating the start of a new code block
+2. Unlike the `if` clause, the `else` clause doesn’t require a condition
+    - That’s because else acts as a catch-all: if the `<condition>` is `False`, `<code b>` runs no matter what.
 
 Let's take a look at an example:
 
@@ -49,15 +49,13 @@ It may help to visualize these examples with a flowchart:
 | :--: |
 | _If-Else Flowchart_ |
 
-This example is pretty trivial, but as we add more complexity to our `if` blocks, it may prove more useful.
-
 ## The `elif` Keyword
 
 We can also add additional branches and conditions to our `if` statements.
 
-Imagine instead of simply telling the shooter if they are qualified or unqualified, we can tell them the level of qualification they achieved based on their score.
+Imagine we want to go beyond just telling a shooter whether they qualified or not. Instead, we can tell them their specific qualification level based on their score.
 
-To accomplish this, we can add more subsequent conditions to the `if` block using the `elif` keyword, which can be read as _else if_:
+The `elif` keyword lets us add additional conditions like this:
 
 ```python3
 targets_hit = 31
@@ -82,27 +80,25 @@ Next shooter up!
 
 Let's walk through this example.
 
-The first condition is `targets_hit >= 36`, which evaluates to `False`, since 31 is _not_ greater than or equal to 36.
+1. The first condition, `targets_hit >= 36`, evaluates to `False` because 31 is less than 36.
 
-So then we check the next condition, which is `targets_hit >= 30`. In this case, it's `True`! So we execute the code inside this block, which prints `Sharpshooter`.
+2. The next condition, `targets_hit >= 30`, evaluates to `True` since 31 >= 30. So `Sharpshooter` is printed.
 
-After we find a condition that is satisfied, we exit from the entire block, so the next condition is not checked, and the `else` clause is not executed!
+3. Once a condition is satisfied, the entire `if`-`elif`-`else` block stops-—no further conditions are checked, and the `else` block is skipped.
 
-Since the `print("Next shooter up!")` line is _not_ indented, it is not part of the `if` block. So after we find which branch we execute, this line is executed after no matter what.
+Notice that `print("Next shooter up!")` isn’t indented. This means it’s outside the if block and runs regardless of which condition is met.
 
-This is called _mutual exclusion_, meaning all the branches of the `if` and `elif` statement, as well as the `else` block are mutually exclusive. Only 1 block can be executed!
+This behavior is called _mutual exclusion_: only one block within the `if`, `elif`, or `else` structure can execute. Once Python finds a `True` condition, it skips the rest of the block and moves on.
 
-Let's see the flowchart for this one:
+Here's the flowchart for this example:
 
 | ![If Else](../../../imgs/02_03_IfElse2.png) |
 | :--: |
 | _If-Else Flowchart 2_ |
 
-A bit more complex here. Try to take a `targets_hit` number in mind and follow the flow chart!
+This one’s a bit more complex! Try picking a number for targets_hit and tracing it through the flowchart yourself.
 
-We can see this in a visual way that only one of these print statements can be executed, then we move onto the next instruction, which is to call for the next shooter.
-
-And we can see that if all of our `if` and `elif` conditions are `False`, the `else` block acts as the catch-all or fall-through.
+The diagram shows that only one print statement can run. If all if and elif conditions are False, the else block serves as the catch-all.
 
 ## Conclusion
 
