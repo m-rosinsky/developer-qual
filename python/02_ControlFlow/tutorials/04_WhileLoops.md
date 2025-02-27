@@ -182,3 +182,41 @@ SyntaxError: 'break' outside loop
 ```
 
 ### `continue`
+
+The `continue` keyword doesn't exit the loop--it skips the rest of the current iteration and jumps back to the condition check.
+
+It's useful when you want to ignore certain cases, but keep the loop running.
+
+Here's an example:
+
+```python3
+# Count down from 5, but skip the number 3.
+count = 5
+
+while count >= 0:
+    if count == 3:
+        # Decrement and skip.
+        count -= 1
+        continue
+
+    print(count)
+    count -= 1
+
+print("Liftoff! 🚀")
+```
+```
+5
+4
+2
+1
+0
+Liftoff! 🚀
+```
+
+Notice `3` is skipped in the output, since we encountered the `continue` keyword within the `if` statement.
+
+## Conclusion
+
+In this tutorial, we got our first exposure to loops in Python, using the `while` keyword.
+
+Take a look at `exercise_d.py` for further practice.
